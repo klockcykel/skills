@@ -1,0 +1,25 @@
+Me
+    Tech:10
+        Programming:10
+            Frontend
+                HTML:8
+                CSS:7
+                Javascript:8
+                Frameworks
+                    React:6
+                    Vue.JS:7
+                UX:8
+                Responsive:7
+            Backend
+                NodeJS:8
+                    Javascript:9
+                    Typescript:7
+                Java:8
+                SQL:8
+                    PostgreSQL:8
+                    sqlite:9
+        Network
+            TCP:9
+            UDP:8
+    Non-Tech
+        Weight lifting:8

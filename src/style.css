@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
+    font-family: def, sans-serif;    
+}
+#graph {
+    width: 100vw;
+    height: 100vh;
+}
+#search {
+    position: absolute;
+    top: 2vw;
+    right: 2vh;    
+    text-align: right;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 1vh;
+}
+#searchresult {
+    margin-left: 1vh;
+    font-family: sans-serif;
+    color: #666;        
+    margin-bottom: 1vh;
+    margin-right: 0.5vh;
+    max-height: 80vh;
+    overflow: hidden;    
+}
+.searchresultfade {
+  width:100%;
+  height:15vh;    
+  position:absolute;
+  left:0;
+  bottom:0;
+  background:linear-gradient(transparent 0px, white 18vh);
+}
+.highlighted {
+    fill: #c00 !important;
+    font-weight: 900;
+    stroke: white;
+}
+.dothigh {
+    stroke: rgba(255,0,0,0.2);
+    stroke-width: 2px;
+    fill: #800;    
+}
+.label {
+    stroke: rgba(255,255,255,0.5);
+    paint-order: stroke;
+    stroke-width: 5px;
+}
+.label:hover {
+    stroke: rgb(247, 237, 224);
+    stroke-width: 3px;
+    font-weight: 700;
+}
+h1 {
+    margin: 0;
+}
+#logo {
+    position: absolute;
+    top: 1vw;
+    left: 2vw;
+    text-align: left;
+    font-size: 4vh;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 1vh;
+    padding: 1vw;
+}
+#logo img {
+    height: 4vh;
+    width: auto;
+    margin-bottom: 1vh;
+    padding-right: 1vh;
+    vertical-align: middle;
+}
+.tagline {
+    color: #999;
+    font-size: 2vh;
+}
+.noselect {
+    user-select: none;
+    outline: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+#footer {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 90vh;
+    writing-mode: vertical-lr;    
+    color: #999;
+    font-size: 1.5vh;
+    transform: rotate(180deg);
+}
+.transpwrapper {
+    background-color: rgba(255,255,255,.7);
+    border-radius: 1vw;
+    padding: .5vw;    
+    display: inline-block;
+}
+#footer a {
+    color: #999;
+}
+#footer a:hover {
+    color: rgb(38, 152, 197);
+}
+
+.zoomButton {
+    position: absolute;
+    right: 2vw;
+    border: 1px solid #eee;
+    box-shadow: 1px 1px 2px #666;
+    width: 3vh;
+    height: 3vh;
+    color: #333;
+    font-family: monospace;
+    font-size: 2vh;
+    background-color: rgba(255,255,255,0.9);    
+    line-height: 3.3vh;
+}
+#zoomIn {
+    bottom: 6vh;
+}
+#zoomOut {
+    bottom: 2vh;
+}
+@font-face {
+    font-family: 'def';
+    src: url('./Roboto-Light.ttf');
+}
+@media (max-width: 1023px) {
+    #logo {
+        top: unset;
+        bottom: 1vh;
+        left: 2vw;
+        font-size: 5vw;
+    }
+    #logo img {
+        margin-bottom: 1vw;
+        height: 5vw;
+    }
+    .tagline {
+        font-size: 3vw;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1400px) {
+    #logo {
+        top: .5vw;
+        left: 20vw;
+        font-size: 3vh;
+        padding: 0.5vw;
+    }    
+    #logo img {
+        height: 3vh;
+    }
+    .tagline {
+        font-size: 1.5vh;
+    }
+    #search {
+        top: 1vw;
+        right: 20vw;
+    }
+}
