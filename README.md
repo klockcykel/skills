@@ -3,7 +3,7 @@ An interactive CV visualized with D3.
 
 [Demo](https://klockcykel.se/skills/)
 
-# Screenshot
+## Screenshot
 ![](screenshot.png?raw=true)
 
 ## Customize
